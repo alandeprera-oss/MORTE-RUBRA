@@ -1,0 +1,1280 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>* PAGINA DO MORTE RUBRA * ANTI-COMUNISMO * MELHOR VISTO NO NETSCAPE 800x600 *</title>
+
+<!-- ============================================================
+     SALVE AS IMAGENS NA MESMA PASTA DESTE ARQUIVO .HTML COM ESTES NOMES:
+       1) simbolo_anticomunista.png   <- imagem do martelo/foice riscado (fundo)
+       2) pistola.png                 <- imagem da pistola (aba de cima)
+       3) facas.jpg                   <- imagem das facas (aba de baixo)
+       4) marx.jpg                    <- retrato do Marx (apresentacao)
+     ============================================================ -->
+
+<style>
+/* ============ RESET BASICO ============ */
+* { box-sizing: border-box; }
+
+/* ============ FUNDO / CORPO ============ */
+body {
+  margin: 0;
+  padding: 14px;
+  background-color: #000000;
+  background-image: url('simbolo_anticomunista.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 260px;          /* tile grande, tipo papel de parede */
+  font-family: "Comic Sans MS", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+  color: #ffff00;                  /* TEXTO AMARELO (pedido) */
+}
+
+/* ============ CAIXA PRINCIPAL ============ */
+#site {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px;
+  background: rgba(0,0,0,0.86);
+  border: 4px ridge #ff0000;
+  box-shadow: 0 0 24px #ff0000;
+}
+
+/* ============ TIPOGRAFIA ============ */
+h1, h2, h3, h4 {
+  font-family: "Courier New", Courier, monospace;
+  color: #ff0000;
+  text-shadow: 2px 2px 0 #ffff00;
+  margin: 10px 0 8px 0;
+  letter-spacing: 1px;
+}
+h1 { text-align: center; font-size: 28px; }
+h2 { font-size: 22px; border-bottom: 3px double #ff0000; padding-bottom: 4px; }
+h3 { font-size: 18px; }
+
+p { line-height: 1.5; margin: 8px 0; }
+small { color: #cccccc; }
+
+/* ============ LINKS ============ */
+a         { color: #ffff00; font-weight: bold; }
+a:visited { color: #ffaa00; }
+a:hover   { color: #000000; background: #ffff00; text-decoration: none; }
+
+/* ============ BLINK (o classico <blink>) ============ */
+@keyframes piscar {
+  0%, 49%   { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.pisca {
+  animation: piscar 1s steps(1, end) infinite;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* ============ ABAS / FAIXAS ============ */
+.aba {
+  margin: 14px 0;
+  padding: 8px;
+  background: #0d0d0d;
+  border: 3px outset #808080;   /* bevel 90's */
+}
+.aba h2 { margin-top: 0; }
+
+/* ============ MOLDURAS DE FOTO ============ */
+.moldura {
+  display: inline-block;
+  padding: 5px;
+  background: #222;
+  border: 4px inset #999999;
+}
+.moldura img { display: block; max-width: 100%; height: auto; }
+
+/* ============ BOTOES 90'S ============ */
+.botao {
+  display: inline-block;
+  margin: 3px 4px 3px 0;
+  padding: 5px 12px;
+  background: #808080;
+  color: #000000;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px outset #c0c0c0;
+}
+.botao:visited { color: #000000; }
+.botao:hover   { background: #ffff00; color: #000; }
+.botao:active  { border-style: inset; }
+
+/* ============ SELO GIRATORIO (letreiro rodando) ============ */
+#selo {
+  width: 240px;
+  height: 240px;
+  margin: 6px auto;
+}
+#selo svg {
+  width: 100%;
+  height: 100%;
+  animation: girar 14s linear infinite;   /* VELOCIDADE DO LETREIRO */
+}
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ============ MARQUEE / FAIXA ============ */
+.faixa {
+  background: #1a0000;
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
+  color: #ffff00;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 4px 0;
+  margin: 10px 0;
+}
+
+/* ============ CONTADOR DE VISITAS FALSO ============ */
+.contador { margin: 8px 0; }
+.contador span {
+  display: inline-block;
+  margin: 1px;
+  padding: 0 5px;
+  background: #000;
+  color: #00ff00;
+  border: 2px inset #888888;
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ============ MENU / INDICE ============ */
+ol.indice { margin: 6px 0 6px 10px; padding-left: 18px; }
+ol.indice li { margin: 5px 0; }
+
+/* ============ CAIXA DE SECAO ============ */
+.secao {
+  margin: 18px 0;
+  padding: 10px;
+  background: #0a0a0a;
+  border: 3px outset #800000;
+}
+
+/* ============ FOTO FLUTUANTE (Marx) ============ */
+.foto-esq { float: left; margin: 0 14px 10px 0; }
+.limpa { clear: both; }
+
+/* ============ RODAPE ============ */
+#rodape {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 3px double #ff0000;
+  text-align: center;
+  font-size: 12px;
+  color: #ffff00;
+}
+</style>
+</head>
+
+<body>
+
+<div id="site">
+
+  <!-- ============================================================
+       LETREIRO GIRATORIO
+       Para trocar a frase: edite o texto dentro do <textPath>.
+       (mantenha mais ou menos o mesmo numero de caracteres
+       para o texto nao sobrar nem faltar dentro do circulo)
+       ============================================================ -->
+  <div id="selo">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <path id="circulo"
+              d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" />
+      </defs>
+      <text fill="#ff0000" font-family="Courier New, monospace" font-size="15"
+            font-weight="bold" letter-spacing="1.5">
+        <textPath href="#circulo" startOffset="0">
+          ★ ABAIXO O COMUNISMO ★ FORA A IDEOLOGIA VERMELHA ★ LIBERDADE ★
+        </textPath>
+      </text>
+    </svg>
+  </div>
+
+  <h1>PAGINA DO MORTE RUBRA</h1>
+
+  <div class="faixa">
+    <marquee scrollamount="6" behavior="scroll">
+      * BEM VINDO AO MEU SITE * MELHOR VISUALIZADO EM 800x600 *
+      ASSINE O LIVRO DE VISITAS * ATUALIZADO EM 2026 *
+    </marquee>
+  </div>
+
+  <p style="text-align:center;">
+    <span class="pisca">* NOVO! *</span>
+    &nbsp;Pagina em construcao &nbsp;|&nbsp;
+    <a href="#apresentacao">APRESENTACAO</a> &nbsp;|&nbsp;
+    <a href="#indice">INDICE</a> &nbsp;|&nbsp;
+    <a href="#comunismo">SOBRE O COMUNISMO</a> &nbsp;|&nbsp;
+    <a href="#livros">LIVROS</a>
+        <a href="#menu-armas">SELEÇÃO DE ARMAS &amp; TECNOLOGIA</a>
+   <!-- ============================================================
+       ABA DE CIMA (dividida em duas colunas) - IMAGEM 2 (pistola)
+       ============================================================ -->
+  <div class="aba">
+    <table width="100%" cellpadding="8" cellspacing="0" border="0">
+      <tr>
+        <td width="45%" align="center" valign="middle">
+          <div class="moldura">
+            <img src="pistola.png" width="240" alt="Pistola imagem de abertura do site">
+          </div>
+        </td>
+        <td valign="middle">
+          <h2>ARQUIVO MORTE RUBRA</h2>
+          <p>
+            Uma pagina independente, feita na mao, sem patrocinio e sem medo.
+            Aqui eu guardo manifestos, textos, livros e opinioes que nao passam
+            na televisao.
+          </p>
+          <p>
+            <a class="botao" href="#apresentacao">ENTRAR</a>
+            <a class="botao" href="#indice">INDICE</a>
+            <a class="botao" href="#comunismo">ESTUDOS</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ============================================================
+       APRESENTACAO
+       ============================================================ -->
+  <div class="secao" id="apresentacao">
+    <h2>&gt;&gt; APRESENTACAO</h2>
+
+    <div class="foto-esq">
+      <div class="moldura">
+        <img src="marx.jpg" width="170" alt="Karl Marx, 1875">
+      </div>
+      <small>Karl Marx (1818-1883)</small>
+    </div>
+
+    <p>
+      Ola! Voce deve ter recebido o arquivo ou o link desse site. Ele e uma pagina
+      criada apos o 4&ordm; mandato de Lula &mdash; nosso pais tem tido um grande
+      aumento de manifestantes do comunismo.
+    </p>
+    <p>
+      Eu sou o criador dessa pagina e me refiro a mim pelo pseudonimo
+      <strong>MORTE RUBRA</strong>. Sou simpatizante de movimentos punk e de
+      extremistas de direita &mdash; claro, sei que e extremamente ironico.
+    </p>
+    <p>Nessa pagina voce vai encontrar:</p>
+
+    <ol class="indice" id="indice">
+      <li><a href="#manifestos">Manifestos anti-comunistas</a></li>
+      <li><a href="#futuro">Opinioes sobre o futuro do pais</a></li>
+      <li><a href="#sobreviver">Como sobreviver</a></li>
+      <li><span style="color:#888;">[espaco reservado &mdash; escreva voce mesmo]</span></li>
+      <li><a href="#livros">Troca de livros e estudos anti-comunistas</a></li>
+      <li><span style="color:#888;">[espaco reservado &mdash; escreva voce mesmo]</span></li>
+    </ol>
+
+    <div class="limpa"></div>
+  </div>
+
+  <!-- ============================================================
+       SECAO: COMUNISMO E SUAS FALHAS
+       ============================================================ -->
+  <div class="secao" id="comunismo">
+    <h2>&gt;&gt; O QUE E O COMUNISMO E ONDE ELE FALHA</h2>
+
+    <h3>1. O que e (na teoria)</h3>
+    <p>
+      O comunismo moderno nasce com <em>O Manifesto Comunista</em> (Marx e Engels, 1848)
+      e com <em>O Capital</em> (1867). Em resumo: a historia seria a luta entre classes;
+      o capitalismo exploraria o trabalhador pela extracao da mais-valia; a solucao seria
+      abolir a propriedade privada dos meios de producao, tomar o Estado
+      (a "ditadura do proletariado") e chegar a uma sociedade sem classes.
+      Na versao de Lenin, o partido de vanguarda faria isso no lugar do proletariado.
+    </p>
+
+    <h3>2. As falhas praticas (calculo economico)</h3>
+    <p>
+      Sem propriedade privada e sem preços livres nao existe sinal de escassez.
+      O debate do "calculo economico" (Mises, 1920; Hayek, 1945) aponta o problema
+      central: um planificador nao tem como saber o custo real de nada. Resultado
+      historico: filas, racionamento, desperdicio, produtos ruins e escassez em paises
+      ricos em recursos. A URSS cresceu rapido na industrializacao forcada (1930-60),
+      mas estagnou a partir dos anos 1970.
+    </p>
+
+    <h3>3. As falhas humanas (o custo em vidas)</h3>
+    <ul>
+      <li><strong>Holodomor</strong> (Ucrania, 1932-33): fome causada pela coletivizacao
+          forcada; estimativas serias variam de ~3,5 a ~5 milhoes de mortos.</li>
+      <li><strong>Grande Salto Adiante</strong> (China, 1959-61): fome ligada as
+          politicas de Mao; estimativas variam de ~15 a ~45 milhoes de mortos
+          (os numeros sao disputados entre historiadores).</li>
+      <li><strong>Grande Terror</strong> (URSS, 1936-38) e o sistema de gulags:
+          centenas de milhares de execucoes documentadas e milhoes de pessoas
+          passando por campos de trabalho.</li>
+      <li><strong>Camboja</strong> (Khmer Vermelho, 1975-79): cerca de 1,5 a 2 milhoes
+          de mortos, ~1/4 da populacao.</li>
+    </ul>
+    <p><small>
+      Observacao honesta: estimativas de mortalidade variam muito entre autores
+      e devem ser tratadas como faixas, nao como numeros exatos.
+    </small></p>
+
+    <h3>4. As falhas politicas</h3>
+    <p>
+      Na pratica, "ditadura do proletariado" virou ditadura de um partido &mdash;
+      e muitas vezes de uma pessoa. Sem imprensa livre, sem oposicao legal e sem
+      eleicao disputada, nao ha mecanismo pacifico de correcao de erro. Isso vale
+      para URSS, China maoista, Cuba, Coreia do Norte, Vietna, Angola, Etiopia,
+      Nicaragua sandinista e outros.
+    </p>
+
+    <h3>5. O outro lado (para nao ser desonesto)</h3>
+    <p>
+      Defensores respondem que esses regimes foram "distorcoes" (stalinismo, maoismo)
+      e nao comunismo de verdade, e citam alfabetizacao, industrializacao e saude
+      publica como ganhos. O ponto fraco desse argumento e que <em>todos</em> os
+      partidos comunistas que chegaram ao poder pela revolucao acabaram em regime
+      de partido unico &mdash; o que sugere um problema estrutural, nao um acidente.
+      Vale lembrar tambem que social-democracia nordica (Suecia, Noruega) nao e
+      comunismo: tem propriedade privada, eleicoes e mercado.
+    </p>
+
+    <h3>6. Opiniao do autor (nao e fato, e opiniao)</h3>
+    <p>
+      A minha tese: o comunismo falha porque tenta resolver a desigualdade pela
+      concentracao total de poder. Concentrar poder nao elimina a desigualdade,
+      so muda quem manda. A alternativa que eu defendo e liberdade individual,
+      propriedade privada, imprensa livre e Estado pequeno e vigiado.
+    </p>
+  </div>
+<!-- ============================================================
+       SEÇÃO: FIGURAS HISTÓRICAS — ERROS E QUEDA DE ERNESTO CHE GUEVARA
+       ============================================================ -->
+  <div class="secao" id="che-guevara-critica" style="margin-top: 30px; border-top: 3px solid #ff0000; padding-top: 20px;">
+    <h2>&gt;&gt; FIGURAS HISTÓRICAS: A VERDADE SOBRE ERNESTO "CHE" GUEVARA</h2>
+
+    <!-- BLOCO 1: ASCENSÃO AO PODER E A REALIDADE AUTORITÁRIA -->
+    <div style="margin-top: 15px;">
+      <h3>1. A Ascensão ao Poder e o Regime de Opressão</h3>
+      
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <!-- Coluna da Esquerda: Espaço para a Imagem 1 -->
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="che_ascensao.jpg" width="240" alt="Ernesto Che Guevara na Revolução Cubana">
+            </div>
+            <small>ARQUIVO: che_ascensao.jpg</small>
+          </td>
+
+          <!-- Coluna da Direita: Texto explicativo -->
+          <td valign="top">
+            <h4>A Insurreição e a Tomada de Cuba</h4>
+            <p>
+              Ernesto "Che" Guevara projetou-se internacionalmente como um dos comandantes militares e ideológicos da Revolução Cubana (1953–1959), que culminou na derrubada do regime de Fulgencio Batista. Ao lado de Fidel Castro, Guevara prometia liberdade e justiça social; no entanto, o triunfo guerrilheiro rapidamente deu lugar a um modelo de estado totalitário de partido único alinhado ao bloco soviético.
+            </p>
+
+            <h4>A Face Opressora e os Fuzilamentos</h4>
+            <p>
+              Após a vitória em 1959, Che Guevara foi nomeado diretor do Banco Nacional de Cuba e, subsequentemente, comandante da infame prisão de <strong>La Cabaña</strong> em Havana. Sob sua jurisdição direta, dezenas de opositores políticos, dissidentes, antigos aliados revolucionários que divergiam do rumo comunista e suspeitos de contrarrevolução foram sumariamente julgados e executados por fuzilamento sem direito a um processo legal justo.
+            </p>
+            <p>
+              Em discursos oficiais da época, Guevara defendeu abertamente a violência estatal como ferramenta revolucionária, afirmando publicamente que não eram necessários procedimentos judiciais burocráticos para eliminar inimigos da revolução. Seu regime de controle institucionalizou a censura de imprensa, o fim da liberdade econômica, a supressão de sindicatos independentes e a perseguição sistemática a minorias e intelectuais dissidentes.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- BLOCO 2: A CAÇADA, A CAPTURA E A MORTE NA BOLÍVIA -->
+    <div style="margin-top: 30px; border-top: 2px dashed #800000; padding-top: 20px;">
+      <h3>2. O Fracasso na Bolívia e a Execução</h3>
+
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <!-- Coluna da Esquerda: Espaço para a Imagem 2 -->
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="MERDINHA MORTO.jpg" width="240" alt="Captura e Morte de Che Guevara na Bolívia">
+            </div>
+            <small>ARQUIVO: MERDINHA MORTO.jpg</small>
+          </td>
+
+          <!-- Coluna da Direita: Texto explicativo -->
+          <td valign="top">
+            <h4>A Tentativa de Guerrilha na América do Sul</h4>
+            <p>
+              Insatisfeito com os rumos burocráticos e afastado do círculo íntimo de poder em Cuba após desentendimentos estratégicos, Che Guevara abandonou o país na década de 1960 para tentar exportar a revolução armada para outros países. Após uma tentativa fracassada no Congo, Guevara entrou clandestinamente na Bolívia em 1966 com um pequeno grupo de guerrilheiros, tentando estabelecer um foco insurrecional na região de Ñancahuazú.
+            </p>
+            <p>
+              Contudo, a empreitada foi um completo fracasso tático e político. Guevara falhou em obter apoio dos camponeses locais — que viam os estrangeiros armados com desconfiança —, foi isolado pela população e severamente fustigado pelas forças armadas bolivianas, que contavam com treinamento e inteligência estratégica de conselheiros militares dos Estados Unidos (incluindo agentes da CIA).
+            </p>
+
+            <h4>A Captura e o Fim em La Higuera</h4>
+            <p>
+              Encurralado, ferido e com sua tropa dizimada pela fome, doenças e deserções, Che Guevara foi cercado e capturado pelo exército boliviano em 8 de outubro de 1967 na quebrada de Yuro. 
+            </p>
+            <p>
+              Guevara foi levado para a escola abandonada na aldeia de La Higuera. No dia seguinte, 9 de outubro de 1967, por ordens diretas do alto comando do governo boliviano (liderado pelo presidente René Barrientos), Guevara foi executado sumariamente a tiros pelo sargento do exército Mario Terán. Seu corpo foi posteriormente amarrado aos patins de um helicóptero, transportado para Vallegrande para exibição pública e enterrado em uma vala clandestina, pondo fim à trajetória do guerrilheiro.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- ============================================================
+       SECAO: MANIFESTOS
+       ============================================================ -->
+  <div class="secao" id="manifestos">
+    <h2>&gt;&gt; MANIFESTOS ANTI-COMUNISTAS</h2>
+
+    <h3>MANIFESTO 01 &mdash; NADA ACIMA DO INDIVIDUO</h3>
+    <p>
+      1. Toda pessoa tem o direito de dizer, escrever, publicar e discordar.<br>
+      2. Nenhuma ideia, partido, igreja ou Estado esta acima da critica.<br>
+      3. Nenhuma utopia vale mais do que a vida concreta de uma pessoa.<br>
+      4. Contra a ideologia, eu uso papel, tinta, argumento e voto.<br>
+      5. Quem quer mudar o pais pela forca nao quer mudar o pais: quer tomar o lugar
+         de quem ja oprime.
+    </p>
+    <p><small>
+      Um manifesto de verdade nao pede violencia: ele pede que a sua ideia seja
+      debatida em publico e perca ou vença no argumento.
+    </small></p>
+  </div>
+
+  <!-- ============================================================
+       SECAO: FUTURO DO PAIS
+       ============================================================ -->
+  <div class="secao" id="futuro">
+    <h2>&gt;&gt; O FUTURO DO PAIS &mdash; MINHAS OPINIOES</h2>
+    <p>
+      Opiniao, nao previsao: o cenario brasileiro seguiria dividido entre dois
+      grupos que nao se ouvem, com a politica virando entretenimento e o debate
+      economico sendo substituido por xingamento. As saidas que eu vejo:
+      educacao basica de verdade, seguranca publica funcional, menos burocracia,
+      imprensa independente e mais poder local (municipio decide mais, Brasilia
+      decide menos).
+    </p>
+  </div>
+
+  <!-- ============================================================
+       SECAO: COMO SOBREVIVER (preparacao civil, legal)
+       ============================================================ -->
+  <div class="secao" id="sobreviver">
+    <h2>&gt;&gt; COMO SOBREVIVER &mdash; KIT BASICO DE PREPARACAO</h2>
+    <p>
+      Nada de heroismo: sobreviver a crise, apagao, enchente ou desabastecimento
+      e organizacao domestica e legalidade.
+    </p>
+    <ol>
+      <li><strong>Agua:</strong> 2 litros por pessoa/dia; reserve 7 dias. Filtro ou
+          hipoclorito para tratar agua duvidosa.</li>
+      <li><strong>Comida:</strong> alimentos que nao estragam (arroz, feijao, enlatados,
+          farinha, sal, acucar), 7 a 14 dias, girando o estoque.</li>
+      <li><strong>Saude:</strong> kit de primeiros socorros, remedios de uso continuo,
+          copia de receitas, curso basico de primeiros socorros.</li>
+      <li><strong>Documentos:</strong> copias fisicas e digitais (RG, CPF, titulo, exames).</li>
+      <li><strong>Energia e informacao:</strong> lanterna, pilhas, radio a pilha, power bank,
+          dinheiro em especie.</li>
+      <li><strong>Seguranca:</strong> iluminacao externa, tranca boa, combinado de vizinhos,
+          rota de saida de casa e ponto de encontro da familia.</li>
+      <li><strong>Defesa pessoal:</strong> dentro da lei &mdash; treinar percepcao de risco,
+          evitar conflito e conhecer as regras locais sobre qualquer meio de defesa.
+          Arma e responsabilidade juridica serissima; nao e brinquedo.</li>
+      <li><strong>Renda:</strong> uma habilidade vendavel (conserto, cozinha, solda,
+          programacao, enfermagem) vale mais que qualquer estoque.</li>
+    </ol>
+  </div>
+
+  <!-- ============================================================
+       SECAO: LIVROS E ESTUDOS
+       ============================================================ -->
+  <div class="secao" id="livros">
+    <h2>&gt;&gt; TROCA DE LIVROS E ESTUDOS ANTI-COMUNISTAS</h2>
+    <p>Minha estante basica (leia, discorde, anote na margem):</p>
+    <ul>
+      <li><em>O Caminho da Servidao</em> &mdash; F. A. Hayek</li>
+      <li><em>Acao Humana</em> &mdash; Ludwig von Mises</li>
+      <li><em>Arquipelago Gulag</em> &mdash; Aleksandr Solzhenitsyn</li>
+      <li><em>O Terror Soviético</em> &mdash; Robert Conquest</li>
+      <li><em>Origens do Totalitarismo</em> &mdash; Hannah Arendt</li>
+      <li><em>1984</em> e <em>A Revolucao dos Bichos</em> &mdash; George Orwell</li>
+      <li><em>Liberdade de Escolher</em> &mdash; Milton e Rose Friedman</li>
+      <li><em>A Sociedade Aberta e seus Inimigos</em> &mdash; Karl Popper</li>
+    </ul>
+  </div>
+ <div class="secao" id="menu-armas" style="border: 3px double #ff0000; background: #110000; padding: 12px; margin-bottom: 25px; text-align: center;">
+    <h3 style="margin: 0 0 10px 0; color: #ff0000; text-shadow: 1px 1px 0 #ffff00;">
+      &gt;&gt; PAINEL DE SELEÇÃO RÁPIDA DE ARMAMENTO E TECNOLOGIA
+    </h3>
+    <p style="font-size: 14px; margin-bottom: 10px;">Clique na categoria para ir direto ao tópico:</p>
+
+    <div style="line-height: 2.2;">
+      <a class="botao" href="#combate" style="border-color: #ff0000; color: #ffff00; background: #330000;">💣 1. EXPLOSIVOS</a> 
+      <a class="botao" href="#armas-fogo-sec" style="border-color: #ff0000; color: #ffff00; background: #330000;">🔫 2. ARMAS DE FOGO</a> 
+      <a class="botao" href="#armas-brancas" style="border-color: #ff0000; color: #ffff00; background: #330000;">🗡️ 3. ARMAS BRANCAS</a> 
+      <a class="botao" href="#tecnologia" style="border-color: #ff0000; color: #ffff00; background: #330000;">💻 4. TECNOLOGIA</a> 
+    </div>
+
+    <!-- ============================================================
+     SECAO: COMBATE (COM IDs INTEGRADOS AO PAINEL)
+     ============================================================ -->
+<div class="secao" id="combate">
+  <h2>&gt;&gt; 1. BOMBAS E EXPLOSIVOS</h2>
+
+  <!-- 1.1 COQUETEL MOLOTOV -->
+  <div id="molotov-sec">
+    <h4>1.1 Coquetel Molotov</h4>
+    <table width="100%" cellpadding="8" cellspacing="0" border="0">
+      <tr>
+        <td width="35%" align="center" valign="top">
+          <div class="moldura">
+            <img src="coquetel_molotov.jpg" width="240" alt="Ilustração/Foto Coquetel Molotov">
+          </div>
+          <small>ARQUIVO: coquetel_molotov.jpg</small>
+        </td>
+        <td valign="top">
+          <h4>Origem Histórica e o Nome</h4>
+          <p>
+            Embora garrafas incendiárias simples já tivessem sido utilizadas anteriormente 
+            (como na Guerra Civil Espanhola), foi na Finlândia que o dispositivo recebeu o seu 
+            nome famoso e passou por um processo de padronização industrial.
+          </p>
+          <p>
+            Quando a União Soviética invadiu a Finlândia em novembro de 1939, o ministro das 
+            Relações Exteriores soviético, Vyacheslav Molotov, afirmou em transmissões de rádio 
+            que os aviões soviéticos não estavam bombardeando cidades finlandesas, mas sim lançando 
+            mantimentos e suprimentos de emergência para a população faminta. Os finlandeses, 
+            com humor sarcástico, passaram a chamar as bombas soviéticas de "cestas de pão de Molotov".
+          </p>
+          <p>
+            Em resposta aos tanques de guerra soviéticos, o exército finlandês adaptou as garrafas 
+            incendiárias como arma antitanque improvisada e passou a chamá-las de "um coquetel para 
+            acompanhar as cestas de pão de Molotov", expressão que acabou sintetizada apenas como 
+            Coquetel Molotov.
+          </p>
+
+          <h4>Utilização e Produção na Guerra</h4>
+          <p>
+            Durante o conflito, as forças finlandesas enfrentavam uma grande superioridade numérica 
+            e de blindados soviéticos. Como faltavam armas antitanque convencionais, a garrafa 
+            incendiária tornou-se uma ferramenta crucial de defesa de infantaria a curta distância.
+          </p>
+          <p>
+            A eficácia da arma levou a estatal finlandesa de bebidas destiladas, Rajamäki, a produzir 
+            o dispositivo em escala industrial. Durante o conflito, a fábrica produziu centenas de 
+            milhares de unidades padronizadas para o exército finlandês. As garrafas eram arremessadas 
+            contra as saídas de ar, motores e esteiras dos tanques, com o objetivo de superaquecer os 
+            motores, derreter mangueiras, causar fumaça sufocante para a tripulação ou incendiar o 
+            combustível do próprio veículo.
+          </p>
+
+          <h4>Como é feito</h4>
+          <p>A versão contemporânea mais utilizada é composta por três elementos básicos:</p>
+          <ul>
+            <li>
+              <strong>Recipiente:</strong> Garrafas de vidro comuns (geralmente de cerveja, vinho ou refrigerante). 
+              O vidro precisa ser fino o bastante para quebrar facilmente no impacto, mas resistente o suficiente 
+              para ser manuseado antes do arremesso.
+            </li>
+            <li>
+              <strong>Mistura Combustível:</strong><br>
+              <em>Base:</em> Gasolina ou diesel (às vezes uma mistura de ambos, onde a gasolina garante a ignição rápida e o diesel prolonga a queima).<br>
+              <em>Agente Espessante (Efeito "Napalm caseiro"):</em> Frequentemente adiciona-se isopor (polirestireno expandido) dissolvido na gasolina, óleo de motor, sabão em pó ou detergente. O isopor se dissolve na gasolina formando um gel viscoso e extremamente pegajoso que adere à superfície atingida e queima por mais tempo sem escorrer rapidamente.
+            </li>
+            <li>
+              <strong>Pavio / Sistema de Ignição:</strong><br>
+              Um pedaço de pano ou tira de tecido (geralmente algodão) parcialmente embebido no líquido combustível.<br>
+              O tecido é introduzido no gargalo e a garrafa é selada firmemente com uma rolha, tampa ou plástico com fita adesiva para evitar vazamentos e impedir que o vapor de combustível vaporize e queime a mão do arremessador antes do lançamento.
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 1.2 BOMBA CASEIRA -->
+  <div id="bomba-caseira-sec" style="margin-top: 20px; border-top: 2px dashed #800000; padding-top: 15px;">
+    <h3>1.2 Bomba Caseira (Artefato Explosivo Improvisado - IED)</h3>
+    <table width="100%" cellpadding="8" cellspacing="0" border="0">
+      <tr>
+        <td width="35%" align="center" valign="top">
+          <div class="moldura" style="margin-bottom: 10px;">
+            <img src="bomba_caseira.jpg" width="240" alt="Artefato Explosivo Improvisado">
+          </div>
+          <small>ARQUIVO: bomba_caseira.jpg</small>
+        </td>
+        <td valign="top">
+          <h4>Origem e Histórico Operacional</h4>
+          <p>
+            Artefatos Explosivos Improvisados (conhecidos na sigla militar internacional como IEDs — <em>Improvised Explosive Devices</em>) são armas rudimentares construídas fora de padrões industriais ou militares padronizados. Historicamente, foram amplamente utilizados em guerrilhas urbanas, movimentos de resistência civil na Europa ocupada durante a Segunda Guerra Mundial (como pelos maquis franceses) e em conflitos assimétricos modernos por forças insurgentes.
+          </p>
+
+          <h4>Utilização e Riscos Táticos</h4>
+          <p>
+            Em cenários extremos de conflito civil, sabotagem ou defesa territorial, artefatos improvisados com tubos metálicos ou recipientes rígidos foram empregados para barrar o avanço de colunas blindadas leves ou forçar pontos de estrangulamento. Contudo, apresentam altíssimo risco operacional: a instabilidade dos compostos químicos misturados de forma caseira e a imprevisibilidade dos sistemas de escorva e detonação causam falhas catastróficas frequentes, resultando em mutilações e acidentes graves para o próprio operador antes mesmo do emprego tático.
+          </p>
+
+          <h4>Estrutura e Componentes Básicos</h4>
+          <ul>
+            <li>
+              <strong>Recipiente de Contenção:</strong> Tubos de metal (ferro ou cobre) ou canos de PVC rígido. Em tubos metálicos fechados nas pontas, a pressão dos gases gera estilhaços letais de alta velocidade no momento da ruptura.
+            </li>
+            <li>
+              <strong>Carga Energética (Propelente / Explosivo):</strong> Misturas químicas instáveis, pólvora extraída de munições comerciais, compostos cloratados ou nitratos obtidos em fertilizantes agrícolas adaptados.
+            </li>
+            <li>
+              <strong>Sistema de Acionamento:</strong> Pavio de queima lenta, espoletas mecânicas ou circuitos elétricos improvisados com baterias e fios de contato.
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 1.3 GRANADAS DE MÃO -->
+  <div id="granada-sec" style="margin-top: 20px; border-top: 2px dashed #800000; padding-top: 15px;">
+    <h3>1.3 Granadas de Mão (Fragmentação e Ofensivas)</h3>
+    <table width="100%" cellpadding="8" cellspacing="0" border="0">
+      <tr>
+        <td width="35%" align="center" valign="top">
+          <div class="moldura" style="margin-bottom: 10px;">
+            <img src="granada_mao.jpg" width="240" alt="Granada de Mão Militar">
+          </div>
+          <small>ARQUIVO: granada_mao.jpg</small>
+        </td>
+        <td valign="top">
+          <h4>Origem Histórica</h4>
+          <p>
+            O conceito de granada remonta à China antiga e ao século XV na Europa, mas ganhou o formato moderno e industrializado durante a Primeira Guerra Mundial, quando as trincheiras exigiram um armamento portátil capaz de atingir alinhamentos inimigos protegidos em abrigos subterrâneos onde o fogo de fuzil não alcançava (ex: granada Mills britânica e a modelo 24 alemã com cabo de madeira).
+          </p>
+
+          <h4>Tipos Principais de Granadas</h4>
+          <ul>
+            <li>
+              <strong>Granada de Fragmentação (Ex: M67, F1):</strong> Projetada para matar ou ferir alvos através da projeção violenta de estilhaços metálicos em um raio letal de 5 a 15 metros (com perigo de estilhaços isolados a mais de 200 metros). O corpo é estriado ou sulcado internamente para fragmentar em dezenas de pedaços letais.
+            </li>
+            <li>
+              <strong>Granada Ofensiva / Concussão:</strong> Projetada para atordoar ou causar danos internos por onda de choque em espaços confinados (salas, bunkers), gerando barulho ensurdecedor e pressão sem estilhaços metálicos pesados.
+            </li>
+          </ul>
+
+          <h4>Como Operar e Lançar</h4>
+          <ul>
+            <li>
+              <strong>Empunhadura e Travamento:</strong> Segure a granada firmemente com a mão dominante, mantendo a alavanca de segurança (*spoon*) firmemente pressionada contra o corpo da granada com o polegar.
+            </li>
+            <li>
+              <strong>Acionamento:</strong> Insira o dedo indicador no anel metálico do contrapino de segurança, puxe girando para romper a presilha e descarte o pino.
+            </li>
+            <li>
+              <strong>Lançamento:</strong> Projete o artefato em direção ao alvo usando um movimento firme de arremesso por cima do ombro ou estilo lançamento de beisebol. Após soltar a alavanca, o escorvador químico consome o retardo (geralmente entre 3,5 a 5 segundos) antes de acionar a carga principal.
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 1.4 TNT E DINAMITE -->
+  <div id="tnt-sec" style="margin-top: 20px; border-top: 2px dashed #800000; padding-top: 15px;">
+    <h3>1.4 TNT (Trinitrotolueno) e Dinamite</h3>
+    <table width="100%" cellpadding="8" cellspacing="0" border="0">
+      <tr>
+        <td width="35%" align="center" valign="top">
+          <div class="moldura" style="margin-bottom: 10px;">
+            <img src="tnt_explosivo.jpg" width="240" alt="Bloco de TNT / Dinamite">
+          </div>
+          <small>ARQUIVO: tnt_explosivo.jpg</small>
+        </td>
+        <td valign="top">
+          <h4>Origem e Diferença Técnica</h4>
+          <p>
+            Embora frequentemente confundidos na cultura popular, <strong>TNT</strong> e <strong>Dinamite</strong> são compostos químicos totalmente distintos desenvolvidos para fins militares e industriais de demolição.
+          </p>
+          <ul>
+            <li>
+              <strong>TNT (Trinitrotolueno):</strong> Sintetizado inicialmente em 1863, é um explosivo militar de altíssima estabilidade. O TNT é tão estável que resiste a impactos mecânicos severos, fogo brando e fricção sem detonar acidentalmente — exigindo obrigatoriamente uma espoleta de detonação secundária para acionar sua carga. É o padrão internacional de medida de energia para ogivas e bombas nucleares (ex: quilotoneladas de TNT).
+            </li>
+            <li>
+              <strong>Dinamite:</strong> Inventada por Alfred Nobel em 1867, consiste na estabilização da nitroglicerina altamente volátil e perigosa ao absorvê-la em materiais inertes porosos (como terra diatomácea, serragem ou celulose). É um explosivo civil de demolição e mineração extremamente potente, porém sensível ao envelhecimento, ao calor e ao congelamento (quando a nitroglicerina exuda do bastão, tornando-se perigosamente instável).
+            </li>
+          </ul>
+
+          <h4>Aplicação e Manuseio Industrial</h4>
+          <p>
+            Ambos os materiais são estritamente controlados pelas leis brasileiras (exigindo registro no Exército e CRAF/CR de atirador ou blaster profissional). São aplicados em grandes obras de engenharia civil, abertura de túneis em rocha sólida, desmonte de estruturas metálicas e demolição controlada. O manuseio amador ou fora de normas técnicas rigorosas resulta em detonações prematuras fatais devido à onda de choque e à toxicidade severa dos vapores liberados.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ============================================================
+       2. ARMAS DE FOGO (ID: armas-fogo-sec)
+       ============================================================ -->
+  <div id="armas-fogo-sec" style="margin-top: 30px; border-top: 3px solid #ff0000; padding-top: 20px;">
+    <h2>&gt;&gt; 2. ARMAS DE FOGO</h2>
+
+    <!-- 2.1 ESPINGARDAS (ID: espingardas-sec) -->
+    <div id="espingardas-sec" style="margin-top: 15px;">
+      <h3>2.1 Espingardas</h3>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="espingarda.jpg" width="240" alt="Espingarda">
+            </div>
+            <small>ARQUIVO: espingarda.jpg</small>
+            <br><br>
+            <div class="moldura" style="margin-bottom: 5px;">
+              <img src="municoes_espingarda.jpg" width="160" alt="Munições de Espingarda">
+            </div>
+            <small>ARQUIVO: municoes_espingarda.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>1. Tipos de Espingardas e Média de Preço (Mercado Brasileiro)</h4>
+            <ul>
+              <li>
+                <strong>Monotiro (Cartucheira Basculante):</strong> Sistema de disparo único por cano dobrável/basculante. Leve, simples e com baixíssimo risco de pane mecânica. <br>
+                <em>Média de preço:</em> R$ 1.800 a R$ 2.800 (novas) | R$ 1.000 a R$ 1.600 (usadas/transferência).
+              </li>
+              <li>
+                <strong>Cano Duplo (Paralelo ou Sobreposto):</strong> Possui dois canos, permitindo dois disparos instantâneos sem necessidade de ciclagem manual entre os tiros. Muito confiável. <br>
+                <em>Média de preço:</em> R$ 3.500 a R$ 6.500 (novas) | R$ 2.200 a R$ 4.000 (usadas).
+              </li>
+              <li>
+                <strong>Pump-Action (Repetição por Telha/Telha Deslizante):</strong> Sistema tubular de munições com alimentação manual puxando a telha (*pump*). Alta capacidade de cartuchos (5 a 8 tiros). <br>
+                <em>Média de preço:</em> R$ 4.500 a R$ 8.500 (novas, ex: CBC Pump Military/Boito) | R$ 3.000 a R$ 5.000 (usadas).
+              </li>
+              <li>
+                <strong>Espingarda Cerrada (Cano Serrado / Sawed-Off):</strong> Modificação artesanal ou militar de espingardas monotiro/duplo/pump onde o cano (e muitas vezes a coronha) é cortado criticamente. <br>
+                <em>Média de preço:</em> Costuma ser derivada de armas usadas modificadas (R$ 1.000 a R$ 2.500 dependendo da arma base).
+              </li>
+            </ul>
+
+            <h4>2. História da Espingarda Cerrada (Sawed-Off Shotgun)</h4>
+            <p>
+              O conceito da espingarda cerrada remonta ao século XIX na fronteira americana e ao uso por forças policiais e guardas de diligência (*stagecoach guards*), além do uso ostensivo durante as guerras de guerrilha na Europa Central e Sicília (conhecida tradicionalmente como <em>Lupara</em>).
+            </p>
+            <p>
+              Na Primeira Guerra Mundial e na Grande Depressão, armas longas tinham o cano serrado artesanalmente para facilitar a ocultação sob casacos e permitir saque rápido em combates a curtíssima distância (ambientes confinados ou interior de veículos). O corte do cano remove os choques da arma, fazendo com que a chumbalhada se espalhe extremamente rápido em poucos metros, cobrindo uma área de impacto ampla, porém perdendo o alcance e a precisão em distâncias médias ou longas.
+            </p>
+
+            <h4>3. Como Carregar e Atirar em Cada Modelo</h4>
+            <ul>
+              <li>
+                <strong>Monotiro:</strong><br>
+                <em>Carregamento:</em> Acione a alavanca de abertura, bascule o cano para baixo, insira o cartucho diretamente na câmara e feche a arma com firmeza.<br>
+                <em>Disparo:</em> Puxe o cão externo para trás até engrenar (armar o gatilho), alinhe a massa de mira, apoie firmemente na cavidade do ombro e pressione o gatilho.
+              </li>
+              <li>
+                <strong>Cano Duplo:</strong><br>
+                <em>Carregamento:</em> Abra a chave de basculamento, dobre os canos, insira dois cartuchos (um em cada câmara) e feche.<br>
+                <em>Disparo:</em> Em modelos com monogatilho, cada puxada de gatilho dispara um cano sequencialmente; em modelos com dois gatilhos (bi-gatilho), o gatilho dianteiro dispara o cano inferior/esquerdo e o traseiro dispara o cano superior/direito.
+              </li>
+              <li>
+                <strong>Pump-Action:</strong><br>
+                <em>Carregamento:</em> Alimente os cartuchos um a um na janela inferior (tubo depositário). Para o primeiro tiro, aperte a trava da telha e puxe a telha completamente para trás e para a frente para alimentar a câmara.<br>
+                <em>Disparo:</em> Com a trava de segurança desativada, aperte o gatilho. Após o disparo, puxe a telha para trás com vigor para ejetar o estojo deflagrado e empurre para frente para alimentar o próximo cartucho.
+              </li>
+              <li>
+                <strong>Espingarda Cerrada:</strong><br>
+                <em>Carregamento:</em> Segue o mesmo procedimento da arma base (basculante ou pump).<br>
+                <em>Disparo:</em> Devido à falta da coronha ou ao menor peso frontal, o recuo (coice) sobe com muita violência. É fundamental segurar a empunhadura com força total usando ambas as mãos e manter a arma afastada do rosto para evitar lesões por impacto do recuo.
+              </li>
+            </ul>
+
+            <h4>4. Melhores Calibres para Defesa</h4>
+            <ul>
+              <li><strong>Calibre 12 (12GA):</strong> Padrão global. Maior variedade de cartuchos (bagos 3T, SG, balote). Forte recuo em armas leves ou cerradas.</li>
+              <li><strong>Calibre 20 (20GA):</strong> Equilíbrio ideal. Baixa o recuo em 40% a 50% mantendo excelente energia terminal em ambiente residencial.</li>
+              <li><strong>Calibre 36 (.410):</strong> Diâmetro reduzido, recuo mínimo. Exige tiros mais precisos devido à menor quantidade de chumbo por cartucho.</li>
+            </ul>
+
+            <h4>5. Acessórios Recomendados</h4>
+            <ul>
+              <li><strong>Porta-Cartuchos de Coronha ou Lateral (Side Saddle):</strong> Mantém munição sobressalente acoplada à própria arma para recarga rápida.</li>
+              <li><strong>Bandoleira Tática / Porta-Cartuchos:</strong> Facilita a retenção da arma e o transporte no tiracolo mantendo as mãos livres.</li>
+              <li><strong>Lanternas Táticas com Acoplamento de Cano/Trilho Picatinny:</strong> Indispensáveis para identificação de alvos no escuro.</li>
+              <li><strong>Soleira de Borracha (Absorvedora de Impacto):</strong> Atenua o recuo do Calibre 12, garantindo maior estabilidade no disparo.</li>
+              <li><strong>Extensor de Tubo de Munição (para Pump-Action):</strong> Aumenta a capacidade de disparos da arma (ex: de 5+1 para 7+1 tiros).</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 2.2 ARMAS CURTAS (ID: curtas-sec) -->
+    <div id="curtas-sec" style="margin-top: 25px; border-top: 2px dashed #800000; padding-top: 15px;">
+      <h4>2.2 Armas Curtas (Pistolas e Revólveres)</h4>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="arma_curta.jpg" width="240" alt="Pistola e Revólver">
+            </div>
+            <small>ARQUIVO: arma_curta.jpg</small>
+            <br><br>
+            <div class="moldura" style="margin-bottom: 5px;">
+              <img src="municoes_curtas.jpg" width="160" alt="Munições de Arma Curta">
+            </div>
+            <small>ARQUIVO: municoes_curtas.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>1. Tipos de Armas Curtas e Média de Preço (Mercado Brasileiro)</h4>
+            <ul>
+              <li>
+                <strong>Revólver (Ação Simples e Dupla):</strong> Possui tambor giratório com capacidade padrão de 5 a 8 tiros. Extrema confiabilidade mecânica, ausência de falhas por ejeção de estojo e facilidade de uso sem travas manuais complexas. <br>
+                <em>Média de preço:</em> R$ 4.500 a R$ 8.500 (novos, ex: Taurus 82/859) | R$ 2.500 a R$ 4.500 (usados regulamentados).
+              </li>
+              <li>
+                <strong>Pistola Semiautomática:</strong> Utiliza carregador removível (geralmente alojado no cabo) e o recuo dos gases para ciclar, ejetar o estojo e introduzir um novo cartucho na câmara a cada acionamento do gatilho. Maior capacidade de munição (8 a 18+ tiros) e recarga rápida por troca de carregador. <br>
+                <em>Média de preço:</em> R$ 6.000 a R$ 12.000+ (novas, ex: Taurus G2C/G3, Glock G17/G19) | R$ 4.000 a R$ 7.000 (usadas).
+              </li>
+            </ul>
+
+            <h4>2. Mecânica: Como Operar, Carregar e Atirar</h4>
+            <ul>
+              <li>
+                <strong>Revólver:</strong><br>
+                <em>Carregamento:</em> Acione a tranca do tambor, bascule-o para o lado esquerdo, insira os cartuchos nas câmaras do tambor individualmente ou usando um carregador rápido (*speedloader*), e empurre o tambor de volta até travar.<br>
+                <em>Disparo:</em> Em Ação Dupla (DA), puxar o gatilho inteiro arma o cão e dispara o tiro (gatilho mais pesado). Em Ação Simples (SA), você empurra o cão manualmente para trás até armar e depois aciona o gatilho levemente.
+              </li>
+              <li>
+                <strong>Pistola Semiautomática:</strong><br>
+                <em>Carregamento:</em> Insira o carregador municiado dentro da empunhadura até ouvir o clique de travamento. Puxe o ferrolho totalmente para trás (procedimento de *rack*) e solte-o com firmeza para introduzir o primeiro cartucho na câmara.<br>
+                <em>Disparo:</em> Desative a trava manual de segurança (se houver). Pressione o gatilho. O recuo do disparo empurra o ferrolho para trás, ejetando o estojo vazio e engatilhando o próximo tiro automaticamente. Quando o último tiro é disparado, o ferrolho para travado aberto.
+              </li>
+            </ul>
+
+            <h4>3. Principais Calibres para Defesa e Uso Civil</h4>
+            <ul>
+              <li><strong>Calibre .38 Special:</strong> O clássico para revólveres no Brasil. Confiável, recuo moderado e boa eficácia em distâncias curtas, aceitando variações de alta pressão (+P).</li>
+              <li><strong>Calibre .380 ACP:</strong> O calibre semiautomático mais tradicional para porte civil restrito no Brasil por muitos anos. Baixo recuo, excelente controlabilidade, embora inferior em termos de poder de parada (*stopping power*) se comparado aos calibres maiores.</li>
+              <li><strong>Calibre 9mm Luger (9x19mm):</strong> O padrão mundial militar e policial. Altíssimo poder de parada, excelente disponibilidade de munição e capacidade elevada nos carregadores de pistolas modernas.</li>
+              <li><strong>Calibre .40 S&W:</strong> Desenvolvido para entregar maior massa e energia que o 9mm, muito utilizado por forças de segurança pública brasileiras (Polícia Militar e Civil). Recuo mais seco e cortante.</li>
+            </ul>
+
+            <h4>4. Acessórios Essenciais para Porte e Manuseio</h4>
+            <ul>
+              <li><strong>Coldre Rígido de Retenção (Kydex ou Polímero):</strong> Essencial para proteger o gatilho contra disparos acidentais e garantir saque seguro e rápido.</li>
+              <li><strong>Porta-Carregador Duplo / Speedloaders:</strong> Permite carregar reservas de munição de forma ágil no cinto tático.</li>
+              <li><strong>Lanterna Tática Trilho / Portátil:</strong> Indispensável para varreduras noturnas ou ambientes de baixa luminosidade.</li>
+              <li><strong>Kit de Limpeza Rápida (Baqueta, Escovas e Óleo Protetivo):</strong> Armas curtas retêm resíduos de pólvora e fuligem rapidamente no interior do cano e ferrolho, exigindo manutenção periódica após o uso.</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 2.3 SMG (ID: smg-sec) -->
+    <div id="smg-sec" style="margin-top: 25px; border-top: 2px dashed #800000; padding-top: 15px;">
+      <h4>2.3 SMG (Submetralhadora / Submachine Gun)</h4>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="smg.jpg" width="240" alt="Submetralhadora SMG">
+            </div>
+            <small>ARQUIVO: smg.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>1. Conceito e Função</h4>
+            <p>
+              A Submetralhadora (SMG) é uma arma automática compacta projetada para disparar munição de pistola (como 9mm, .45 ACP). Oferece alto volume de fogo em ambientes confinados (*CQB* — Close Quarters Battle), sendo ideal para patrulhas urbanas, forças especiais e proteção de autoridades.
+            </p>
+
+            <h4>2. Média de Preço e Mercado</h4>
+            <ul>
+              <li><strong>Modelos Militares/Policiais (Ex: CZ Scorpion EVO, MP5, Taurus SMT):</strong> Restrito a forças de segurança e acervos restritos (CACs autorizados), com valores variando acima de R$ 10.000 a R$ 25.000+.</li>
+              <li><strong>Versões Semi-automáticas Civis / PCC (Pistol Caliber Carbine):</strong> R$ 7.000 a R$ 14.000.</li>
+            </ul>
+
+            <h4>3. Mecânica e Operação</h4>
+            <ul>
+              <li><strong>Funcionamento:</strong> Sistema de blowback (ação por recuo direto do ferrolho) ou sistema trancado. Possui seletor de tiro (semi e automático nos modelos militares).</li>
+              <li><strong>Carregamento:</strong> Carregadores de alta capacidade (geralmente 25 a 30 munições) inseridos na empunhadura ou à frente do gatilho.</li>
+            </ul>
+
+            <h4>4. Calibres Principais</h4>
+            <p>9mm Luger e .45 ACP — garantem controle excelente em rajadas e baixo recuo comparado a fuziles.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 2.4 CARABINAS (ID: carabina-sec) -->
+    <div id="carabina-sec" style="margin-top: 25px; border-top: 2px dashed #800000; padding-top: 15px;">
+      <h4>2.4 Carabinas (Armas Longas de Cano Médio/Curto)</h4>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="carabina.jpg" width="240" alt="Carabina Tática">
+            </div>
+            <small>ARQUIVO: carabina.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>1. Conceito e Função</h4>
+            <p>
+              A carabina é originalmente uma arma de fogo semelhante a um fuzil, porém com cano mais curto e leve. Historicamente muito usada por cavalaria e forças que precisavam de mobilidade. Hoje, destaca-se nas versões de ação por alavanca (*lever-action* estilo velho oeste) ou carabinas modernas em calibre de pistola (*PCC*).
+            </p>
+
+            <h4>2. Média de Preço (Mercado Brasileiro)</h4>
+            <ul>
+              <li><strong>Carabina Puma Rossi (.357 Magnum / .44 Rem / .38 Special):</strong> R$ 5.500 a R$ 9.000 (novas).</li>
+              <li><strong>Carabinas CBC / Taurus T4 Plataforma:</strong> R$ 8.000 a R$ 14.000.</li>
+            </ul>
+
+            <h4>3. Mecânica e Operação</h4>
+            <ul>
+              <li><strong>Ação por Alavanca (Lever-Action):</strong> O atirador aciona uma alavanca integrada ao guarda-mato para ejetar o estojo e engatilhar o próximo cartucho tubular.</li>
+              <li><strong>Precisão:</strong> Excelente para médias distâncias (até 100-150 metros), combinando agilidade com grande energia terminal.</li>
+            </ul>
+
+            <h4>4. Calibres Populares</h4>
+            <p>.38 Special / .357 Magnum (perfeito para usar a mesma munição de revólveres), .44 Remington Magnum e .22 LR para treino econômico.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 2.5 RIFLES (ID: rifle-sec) -->
+    <div id="rifle-sec" style="margin-top: 25px; border-top: 2px dashed #800000; padding-top: 15px;">
+      <h4>2.5 Rifles (De Precisão / Bolt-Action)</h4>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="rifle.jpg" width="240" alt="Rifle de Precisão Bolt-Action">
+            </div>
+            <small>ARQUIVO: rifle.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>1. Conceito e Função</h4>
+            <p>
+              Rifles de ação por ferrolho (*bolt-action*) são projetados cirurgicamente para tiros de extrema precisão a longas distâncias. São as armas clássicas de atiradores de elite (*snipers*) e caçadores profissionais.
+            </p>
+
+            <h4>2. Média de Preço (Mercado Brasileiro)</h4>
+            <ul>
+              <li><strong>Modelos de Entrada (Ex: Savage, Ruger American, CZ):</strong> R$ 9.000 a R$ 16.000.</li>
+              <li><strong>Plataformas Táticas Avançadas (Ex: Tikka, Remington 700 customizados):</strong> R$ 18.000 a R$ 40.000+.</li>
+            </ul>
+
+            <h4>3. Mecânica e Operação</h4>
+            <ul>
+              <li><strong>Ferrolho Manual:</strong> Cada disparo exige levantar a manopla do ferrolho, puxá-la para trás (ejetando o cartucho), empurrá-la para frente e travá-la para inserir um novo projétil na câmara. Garante estanqueidade mecânica máxima e precisão balística pura.</li>
+            </ul>
+
+            <h4>4. Calibres Principais</h4>
+            <p>.308 Winchester (7.62x51mm NATO) — padrão ouro de precisão e alcance intermediário; .300 Winchester Magnum e .338 Lapua Magnum para tiros de ultra-longa distância.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 2.6 FUZIS DE ASSALTO (ID: fuzil-sec) -->
+    <div id="fuzil-sec" style="margin-top: 25px; border-top: 2px dashed #800000; padding-top: 15px;">
+      <h4>2.6 Fuzis de Assalto</h4>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="fuzil.jpg" width="240" alt="Fuzil de Assalto Tático">
+            </div>
+            <small>ARQUIVO: fuzil.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>1. Conceito e Função</h4>
+            <p>
+              O fuzil de assalto é uma arma longa seletiva (capaz de disparar em rajadas ou tiro a tiro) que utiliza cartuchos de potência intermediária e carregadores destacáveis de grande capacidade. É o armamento principal da infantaria moderna em exércitos de todo o mundo.
+            </p>
+
+            <h4>2. Média de Preço e Acesso (Mercado Brasileiro)</h4>
+            <ul>
+              <li><strong>Plataformas Civis / Semi-automáticas (Ex: IMBEL IA2, Taurus T4, plataformas AR-15 / 5.56):</strong> R$ 12.000 a R$ 25.000+ (com restrições legais severas via Exército/Sigma para colecionadores, atiradores e caçadores habilitados).</li>
+            </ul>
+
+            <h4>3. Mecânica e Operação</h4>
+            <ul>
+              <li><strong>Acionamento a Gases:</strong> Utiliza parte dos gases do disparo para empurrar o pistão ou o transportador do ferrolho para trás, realizando o ciclo completo de ejeção e alimentação de forma automática ou semiautomática.</li>
+            </ul>
+
+            <h4>4. Calibres Principais</h4>
+            <p>5.56x45mm NATO (leve, alta velocidade, menor recuo) e 7.62x51mm NATO (maior poder de perfuração e alcance, recuo mais pesado).</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- ============================================================
+       SECAO: 3. ARMAS BRANCAS
+       ============================================================ -->
+  <div class="secao" id="armas-brancas">
+    <h2>&gt;&gt; 3. ARMAS BRANCAS</h2>
+
+    <!-- 3.1 FACAS DE COMBATE -->
+    <div style="margin-top: 15px;">
+      <h3>3.1 Facas de Combate e Sobrevivência</h3>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="faca_combate.jpg" width="240" alt="Faca de Combate Militar">
+            </div>
+            <small>ARQUIVO: faca_combate.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>Função e Características</h4>
+            <p>
+              A faca de combate é o equipamento utilitário e defensivo mais antigo e versátil do soldado ou operador de campo. Projetada para corte, perfuração, preparação de abrigos, corte de cordas e defesa de último recurso em combates corpo a corpo.
+            </p>
+            <h4>Especificações e Preço</h4>
+            <ul>
+              <li><strong>Tipos de Aço:</strong> Aços inoxidáveis (como 420 ou 440C) para resistência à umidade, ou aços carbono (como 1070 ou 1095) que oferecem maior retenção de fio e facilidade de afiação em campo.</li>
+              <li><strong>Média de Preço:</strong> R$ 150 a R$ 600 (modelos nacionais robustos como Imbel ou Cimo) | R$ 800 a R$ 2.500+ (importadas táticas, ex: Ka-Bar, Cold Steel, Extrema Ratio).</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 3.2 PORRETE -->
+    <div style="margin-top: 25px; border-top: 1px dashed #800000; padding-top: 15px;">
+      <h3>3.2 Porrete / Cassetete Tático</h3>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="porrete.jpg" width="240" alt="Porrete Tático de Madeira ou Polímero">
+            </div>
+            <small>ARQUIVO: porrete.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>Função e Características</h4>
+            <p>
+              Instrumento de impacto contundente fabricado em madeira de alta densidade (como ipê ou jatobá), borracha reforçada ou polímeros de engenharia. Utilizado para controle de multidões, imobilização de ameaças e autodefesa de curto alcance com menor letalidade balística.
+            </p>
+            <h4>Especificações e Preço</h4>
+            <ul>
+              <li><strong>Média de Preço:</strong> R$ 60 a R$ 250 (modelos de polímero retráteis ou bastões rígidos de impacto).</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 3.3 SOCO INGLÊS -->
+    <div style="margin-top: 25px; border-top: 1px dashed #800000; padding-top: 15px;">
+      <h3>3.3 Soco Inglês (Manopla de Aço)</h3>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="soco_ingles.jpg" width="240" alt="Soco Inglês Metálico">
+            </div>
+            <small>ARQUIVO: soco_ingles.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>Função e Características</h4>
+            <p>
+              Arma de punho metálica projetada para encaixar nos dedos, concentrando a força de um soco em uma superfície rígida de metal para maximizar o impacto cinético e proteger os ossos metacarpais da mão do operador.
+            </p>
+            <h4>Aspectos Legais e Preço</h4>
+            <ul>
+              <li><strong>Restrição Jurídica:</strong> No Brasil, o porte ou comércio de socos ingleses é severamente restrito ou classificado como arma branca proibida para porte ostensivo civil em muitas legislações municipais e estaduais.</li>
+              <li><strong>Média de Preço:</strong> R$ 40 a R$ 120.</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 3.4 CANIVETE -->
+    <div style="margin-top: 25px; border-top: 1px dashed #800000; padding-top: 15px;">
+      <h3>3.4 Canivete Tático</h3>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="canivete.jpg" width="240" alt="Canivete Tático Dobrável">
+            </div>
+            <small>ARQUIVO: canivete.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>Função e Características</h4>
+            <p>
+              Ferramenta de corte dobrável de bolso com sistema de travamento de lâmina (*liner lock* ou *frame lock*). Essencial para tarefas cotidianas de corte rápido, abertura de embalagens, corte de cintos de segurança ou uso de emergência em campo.
+            </p>
+            <h4>Especificações e Preço</h4>
+            <ul>
+              <li><strong>Média de Preço:</strong> R$ 80 a R$ 450 (marcas táticas como Smith & Wesson, Gerber, CRKT ou concorrentes nacionais confiáveis).</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       SECAO: 4. TECNOLOGIA E INFORMACAO
+       ============================================================ -->
+  <div class="secao" id="tecnologia">
+    <h2>&gt;&gt; 4. TECNOLOGIA E INFORMACAO</h2>
+
+    <!-- 4.1 DRONES -->
+    <div style="margin-top: 15px;">
+      <h3>4.1 Drones (Reconhecimento e Vigilância)</h3>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="drone.jpg" width="240" alt="Drone de Reconhecimento Tático">
+            </div>
+            <small>ARQUIVO: drone.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>Função e Importância Tática</h4>
+            <p>
+              Veículos aéreos não tripulados (VANTs / Drones) revolucionaram a coleta de inteligência militar e civil. Permitem reconhecimento aéreo silencioso, mapeamento de terreno em tempo real, monitoramento de perímetros e transmissão de vídeo criptografado sem expor o operador a riscos diretos.
+            </p>
+            <h4>Modelos e Faixa de Preço</h4>
+            <ul>
+              <li><strong>Drones Compactos Civis/Profissionais (Ex: DJI Mini / Air series):</strong> R$ 3.000 a R$ 9.000.</li>
+              <li><strong>Sistemas Táticos Especializados:</strong> Equipados com câmeras térmicas e zoom óptico de longo alcance para operações noturnas e vigilância avançada.</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 4.2 REDES SOCIAIS -->
+    <div style="margin-top: 25px; border-top: 1px dashed #800000; padding-top: 15px;">
+      <h3>4.2 Redes Sociais e Guerra da Informação</h3>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="redes_sociais.jpg" width="240" alt="Servidores e Fluxo de Redes Sociais">
+            </div>
+            <small>ARQUIVO: redes_sociais.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>O Campo de Batalha Digital</h4>
+            <p>
+              No século XXI, a informação molda a opinião pública e decide conflitos antes mesmo do primeiro tiro. As redes sociais funcionam como canais de propaganda, contrainformação, mobilização rápida e espionagem de metadados.
+            </p>
+            <h4>Pontos Críticos de Análise</h4>
+            <ul>
+              <li><strong>Segurança Operacional (OPSEC):</strong> O vazamento de dados de localização, fotos com metadados EXIF e check-ins compromete a segurança de indivíduos e grupos organizados.</li>
+              <li><strong>Criptografia e Anonimato:</strong> Uso de plataformas descentralizadas e mensagens criptografadas de ponta a ponta para proteção de comunicações contra interceptação estatal ou corporativa.</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 4.3 LIVROS -->
+    <div style="margin-top: 25px; border-top: 1px dashed #800000; padding-top: 15px;">
+      <h3>4.3 Livros e Manuais Técnicos</h3>
+      <table width="100%" cellpadding="8" cellspacing="0" border="0">
+        <tr>
+          <td width="35%" align="center" valign="top">
+            <div class="moldura" style="margin-bottom: 10px;">
+              <img src="livros_taticos.jpg" width="240" alt="Biblioteca de Manuais Técnicos">
+            </div>
+            <small>ARQUIVO: livros_taticos.jpg</small>
+          </td>
+          <td valign="top">
+            <h4>O Conhecimento Impresso</h4>
+            <p>
+              Diferente da internet, que pode sofrer apagões, censura ou instabilidade em crises, o conhecimento impresso em livros físicos, manuais de engenharia de campo, farmacologia de emergência e guias de sobrevivência representa a base imutável de preservação intelectual.
+            </p>
+            <h4>Acervo Recomendado de Consulta</h4>
+            <ul>
+              <li>Manuais de Engenharia Civil e Mecânica Básica.</li>
+              <li>Guias de Primeiros Socorros de Combate (Protocolo TCCC / PHTLS).</li>
+              <li>Tratados clássicos de estratégia militar (Sun Tzu, Clausewitz).</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ABA DE BAIXO - IMAGEM 3 (facas)
+       ============================================================ -->
+  <div class="aba">
+    <table width="100%" cellpadding="8" cellspacing="0" border="0">
+      <tr>
+        <td valign="middle">
+          <h2>LOJA DE TROCAS / ARQUIVO DE FOTOS</h2>
+          <p>
+            Fotos antigas do arquivo pessoal. Se voce tem material, texto ou livro
+            para trocar, mande pelo livro de visitas.
+          </p>
+          <p>
+            <a class="botao" href="#site">VOLTAR AO TOPO</a>
+            <a class="botao" href="#livros">TROCAR LIVROS</a>
+          </p>
+        </td>
+        <td width="50%" align="center" valign="middle">
+          <div class="moldura">
+            <img src="facas.jpg" width="320" alt="Coleção de facas - arquivo pessoal">
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ============================================================
+       RODAPE
+       ============================================================ -->
+  <div class="faixa">
+    <marquee scrollamount="4" direction="right">
+      * OBRIGADO PELA VISITA * VOLTE SEMPRE * MORTE RUBRA *
+    </marquee>
+  </div>
+
+  <div id="rodape">
+    <p>
+      Voce e o visitante numero:
+    </p>
+    <div class="contador">
+      <span>0</span><span>0</span><span>4</span><span>2</span><span>0</span><span>6</span><span>6</span>
+    </div>
+    <p>
+      <span class="pisca">PAGINA EM CONSTRUCAO</span>
+    </p>
+    <p>
+      Melhor visualizado em Netscape Navigator 3.0 &mdash; 800x600 &mdash; 256 cores<br>
+      &copy; 2026 Morte Rubra &mdash; Conteudo de opiniao pessoal.<br>
+      <small>
+        Este site expressa critica politica e opiniao. Nao incentiva violencia
+        contra pessoas ou grupos.
+      </small>
+    </p>
+  </div>
+
+</div><!-- /#site -->
+
+</body>
+</html
